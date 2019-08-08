@@ -1,8 +1,6 @@
 # NextJS & static data
 Examples of different usage of static files with nextjs
 
-First of all I'd like to say, that requirements are probably wrong and if we have user story, I would probably discuss alternative options, then load data from server
-
 ## option A:
 
 Just add `getInitialProps` with reading file of file and disable `fs` in `package.json`
