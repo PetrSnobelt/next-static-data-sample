@@ -1,6 +1,7 @@
 import React from 'react'
 import App, { Container } from 'next/app'
 import Counter from '../components/counter'
+import Debugger from '../components/debug'
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -19,12 +20,17 @@ class MyApp extends App {
   // }
 
   render() {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps, router } = this.props
 
     return (
       <Container>
         <Component {...pageProps} />
         <Counter />
+
+        <hr />
+        Query in `_app.js`
+        <Debugger {...router.query} />
+
       </Container>
     )
   }
