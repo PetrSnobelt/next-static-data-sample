@@ -19,7 +19,7 @@ Nice and elegant solution, work with next link
 
 ## option C
 
-Read data inside `_server.js` and provide it inside query then extract it in `getInitialProps` of page
+Read data inside `_document.js` and provide it inside query then extract it in `getInitialProps` of page
 Optionally do it in `_app.js` to provide such data for all pages
 
 ## option D
